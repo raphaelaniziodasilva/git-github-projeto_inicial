@@ -1,0 +1,12 @@
+Para ver as alterações que foram feitas no projeto
+    git status
+
+Para adicionar um arquivo especifico
+    git add nome do arquivo
+
+Para adicionar todos os arquivos
+    git add .
+
+Para registrar mudanças no repositório
+    git commit -m "menssagem dizendo qual foi a alteração que foi feita"
+

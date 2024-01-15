@@ -10,3 +10,14 @@ Para adicionar todos os arquivos
 Para registrar mudanças no repositório
     git commit -m "menssagem dizendo qual foi a alteração que foi feita"
 
+Listar o histórico de commits de um repositório
+    git log
+
+Para listar os repositórios remotos
+    git remote
+
+Para enviar os commits do repositório local ao repositório remotos
+    git push origin main --> origin e o repositorio remoto e main e a brach main
+
+Para baixar os commits do repositório remoto para o repositório local
+    git pull origin main --> origin e o repositorio e main e a brach main

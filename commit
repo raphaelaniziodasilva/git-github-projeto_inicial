@@ -1,5 +1,8 @@
-Para ver as alterações que foram feitas no projeto
+Para ver os arquivos que foram alterados do projeto
     git status
+
+Para ver as modificações que foram feitas
+    git diff
 
 Para adicionar um arquivo especifico
     git add nome do arquivo
@@ -25,19 +28,22 @@ Listar o histórico de commits de um repositório
 Cada commit representa uma versão que fica registrada no histórico
 
 Para desfazer um commit siga o passo a passo:
-   Primeiro listar o histórico dos commits
+    Primeiro listar o histórico dos commits
         git log
+
     Segundo pegar o id do commit
         8a1483cb8fabd7ee60770667cba0f4abc296cbfe
-    Terceiro utilize o comando para desfazer as alterações em um commit e use o id do commit especifico
+
+    Terceiro utilizar o comando para desfazer as alterações em um commit e use o id do commit especifico
         git revert 8a1483cb8fabd7ee60770667cba0f4abc296cbfe
 
 Para remover um commit, apagar alterações em um commit local
     listar o histórico dos commits e pegar o id do commit que vai ser a versão que agente vai voltar excluindo o commit que agente quer
         git log
-    apagando commit local
+        
+    apagando commit local e voltando a versão que agente quer
         git reset --hard 8a1483cb8fabd7ee60770667cba0f4abc296cbfe
         --hard --> vai desfazer o commit ou seja apagar o commit e a mudança feita no código
 
-Para alterar a menssagem do commit que ja foi feito, sem a necessudade de apagá-local
+Para alterar a menssagem do commit que ja foi feito, sem a necessidade de apagá-local
     git commit --amend -m "digite a nova menssagem"

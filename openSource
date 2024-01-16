@@ -1,0 +1,39 @@
+Issues com esta funcionalidade, podemos atingir alguns resultados interessantes na organização de um projeto.
+1) Podemos reportar problemas
+  O propósito inicial das issues é reportar e controlar os problemas e bugs de um projeto.
+
+2) Podemos sugerir melhorias no código
+  Utilizadas para sugestão de melhorias no projeto e pedidos de novas funcionalidades
+
+3) Podemos organizar quaisquer coisas que façam sentido para o projeto
+  Utilizadas para fazer a organização do projeto
+
+Para fazer um Pull Requests siga o passo a passo
+  Primeiro Certifique-se de estar na branch "dev" ou "master"
+
+  Segundo crie uma nova branch para suas alterações
+    git checkout dev --> mudando para a branch dev, agora estamos dentro da branch dev
+    git pull origin dev --> trazendo a versão mais nova do codigo de dev, baixando os commits atualizados de dev do repositório remoto para o repositório local
+    git checkout -b nome-da-sua-branch --> criando uma nova branch e mudando para a branch nova
+
+  Terceiro suba a sua branch com todas as alterações que foram feitas
+    git add .
+    git commit -m "Descrição concisa das alterações"
+    Atualize a branch local, certifique-se de ter a branch "dev" mais recente antes de criar o PR: Pull Requests
+    git checkout dev --> mudando para a branch dev, agora estamos dentro da branch dev
+    git pull origin dev --> trazendo a versão mais nova do codigo
+  
+  Quarto volte para sua branch e faça o rebase para integrar as alterações mais recentes da branch "dev":
+    git checkout nome-da-sua-branch
+    git rebase dev
+
+  Quinto resolva conflitos (se houver), se houver conflitos durante o rebase, resolva-os manualmente. Após resolver os conflitos, continue o rebase:
+    git rebase --continue
+
+Sexto faça o Push da sua branch, Depois de concluir o rebase, faça o push da sua branch para o repositório remoto:
+  git push origin nome-da-sua-branch
+
+Setimo crie o Pull Request no GitHub, Azure ou Aws etc...
+  New pull request
+  Importante a sua branch tem que ir para a branch de DEV e não para a master ou main
+  

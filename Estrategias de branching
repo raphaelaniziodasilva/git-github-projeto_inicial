@@ -18,3 +18,13 @@ Vamos criar uma feature. Features são componentes individuais e identificáveis
 
 Finalizado a branch feature/lista-cursos-cloud vamos trazer essa branch para a branch de development
     git merge feature/lista-cursos-cloud
+
+Na branch de development ja temos tudo que precisamos para vamos lançar uma nova versão
+
+Uma "release" em desenvolvimento de software refere-se a uma versão específica do software que é disponibilizada para os usuários ou clientes. Essa versão pode incluir novas funcionalidades, melhorias, correções de bugs e outras alterações planejadas para aquela etapa do desenvolvimento. O ato de lançar uma release é muitas vezes chamado de "liberação" ou "deploy".
+
+Vamos lançar uma nova versão, criar uma nova branch chamada de release e a versão
+    git checkout -b release/v0.2.0
+
+Agora podemos colocar em produção na branch main
+    git checkout main

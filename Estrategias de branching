@@ -1,13 +1,20 @@
-Para trazer um único commit específico da sua branch para a branch dev ou master em que estamos trabalhando.
-    Quando um bug que afeta a branch atual já foi solucionado em outra branch
-        git cherry-pick
-
-Para encontrar quem é o responsavel por cada uma das linhas do arquivo
-    git blame index.html --> index.html nome do arquivo
-
-
 Para visualizar o nosso log de commits de uma forma um pouco mais visual, onde as diferentes branches são representadas por linhas separadas
     git log --graph
+
+Para remover: excluir uma branch preciamos do nome da branch
+    git branch --> para ver todas as branchs
+    git branch -d nome-da-branch --> para remover a branch especifica
+
+A branch master sempre vai estar 100% atualizada e pronto para produção, preciamos ter uma outra branch chamada development
+para que as alterações que foram feitas e queremos testar vamos deixar nessa barnch development e quando estiver 100%
+pronto e testado mandamos para branch master
+
+Vamos criar a branch de development e entrar na branch de development
+    git branch development --> criando branch
+    git checkout development --> entrando na branch
+
+Vamos criar uma feature. Features são componentes individuais e identificáveis de um software que podem ser desenvolvidos, testados e entregues de forma independente.
+    git checkout -b feature/lista-cursos-cloud --> criando feature e uma nova branch e entando nela
 
 Finalizado a branch feature/lista-cursos-cloud vamos trazer essa branch para a branch de development
     git merge feature/lista-cursos-cloud

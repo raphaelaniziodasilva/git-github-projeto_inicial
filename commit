@@ -47,3 +47,10 @@ Para remover um commit, apagar alterações em um commit local
 
 Para alterar a menssagem do commit que ja foi feito, sem a necessidade de apagá-local
     git commit --amend -m "digite a nova menssagem"
+
+Para trazer um único commit específico da sua branch para a branch dev ou master em que estamos trabalhando.
+    Quando um bug que afeta a branch atual já foi solucionado em outra branch
+        git cherry-pick
+
+Para encontrar quem é o responsavel por cada uma das linhas do arquivo
+    git blame index.html --> index.html nome do arquivo

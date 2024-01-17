@@ -9,3 +9,5 @@ Para encontrar quem é o responsavel por cada uma das linhas do arquivo
 Para visualizar o nosso log de commits de uma forma um pouco mais visual, onde as diferentes branches são representadas por linhas separadas
     git log --graph
 
+Finalizado a branch feature/lista-cursos-cloud vamos trazer essa branch para a branch de development
+    git merge feature/lista-cursos-cloud

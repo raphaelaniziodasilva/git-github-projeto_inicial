@@ -1,0 +1,11 @@
+Para trazer um único commit específico da sua branch para a branch dev ou master em que estamos trabalhando.
+    Quando um bug que afeta a branch atual já foi solucionado em outra branch
+        git cherry-pick
+
+Para encontrar quem é o responsavel por cada uma das linhas do arquivo
+    git blame index.html --> index.html nome do arquivo
+
+
+Para visualizar o nosso log de commits de uma forma um pouco mais visual, onde as diferentes branches são representadas por linhas separadas
+    git log --graph
+

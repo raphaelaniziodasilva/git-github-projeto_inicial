@@ -1,4 +1,5 @@
-Para visualizar o nosso log de commits de uma forma um pouco mais visual, onde as diferentes branches são representadas por linhas separadas
+Para visualizar o nosso log de commits de uma forma um pouco mais visual, onde as diferentes branches são 
+representadas por linhas separadas
     git log --graph
 
 Para remover: excluir uma branch preciamos do nome da branch
@@ -6,22 +7,26 @@ Para remover: excluir uma branch preciamos do nome da branch
     git branch -d nome-da-branch --> para remover a branch especifica
 
 A branch master sempre vai estar 100% atualizada e pronto para produção, preciamos ter uma outra branch chamada development
-para que as alterações que foram feitas e queremos testar vamos deixar nessa barnch development e quando estiver 100%
+para pode fazer alterações e testes vamos deixar nessa barnch development e quando estiver 100%
 pronto e testado mandamos para branch master
 
 Vamos criar a branch de development e entrar na branch de development
     git branch development --> criando branch
     git checkout development --> entrando na branch
 
-Vamos criar uma feature. Features são componentes individuais e identificáveis de um software que podem ser desenvolvidos, testados e entregues de forma independente.
+Vamos criar uma feature. Features são componentes individuais e identificáveis de um software que podem ser 
+desenvolvidos, testados e entregues de forma independente.
     git checkout -b feature/lista-cursos-cloud --> criando feature e uma nova branch e entando nela
 
 Finalizado a branch feature/lista-cursos-cloud vamos trazer essa branch para a branch de development
     git merge feature/lista-cursos-cloud
 
-Na branch de development ja temos tudo que precisamos para vamos lançar uma nova versão
+Na branch de development ja temos tudo que precisamos vamos lançar uma nova versão
 
-Uma "release" em desenvolvimento de software refere-se a uma versão específica do software que é disponibilizada para os usuários ou clientes. Essa versão pode incluir novas funcionalidades, melhorias, correções de bugs e outras alterações planejadas para aquela etapa do desenvolvimento. O ato de lançar uma release é muitas vezes chamado de "liberação" ou "deploy".
+Uma "release" em desenvolvimento de software refere-se a uma versão específica do software que é disponibilizada 
+para os usuários ou clientes. Essa versão pode incluir novas funcionalidades, melhorias, correções de bugs e outras 
+alterações planejadas para aquela etapa do desenvolvimento. O ato de lançar uma release é muitas vezes chamado de
+ "liberação" ou "deploy".
 
 Vamos lançar a nova versão, criar uma nova branch chamada de release e a versão
     git checkout -b release/v0.2.0
@@ -29,3 +34,4 @@ Vamos lançar a nova versão, criar uma nova branch chamada de release e a vers�
 Agora podemos colocar em produção na branch main
     git checkout main --> entrando na branch main: produção
     git merge release/v0.2.0
+
